@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="file-permissions-android" version="1.0.0">
+
+    <name>File Permissions</name>
+    <description>Set permissions for android file system.</description>
+    <author>Adrián Vázquez Navarrete</author>
+    <license>MIT</license>
+    <keywords>ecosystem:file,system</keywords>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <repo>https://github.com/adrianvana/androidFilePermissions.git</repo>
+    <issue>https://github.com/adrianvana/GPSpermissions/issues</issue>
+
+    <platform name="android">
+
+    	<config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        </config-file>
+
+    </platform>
+</plugin>
